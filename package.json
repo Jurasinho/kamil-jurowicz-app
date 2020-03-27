@@ -1,0 +1,26 @@
+{
+  "name": "kamil-jurowicz-app",
+  "version": "1.0.0",
+  "description": "Aplikacja napisana we Vue js",
+  "main": "vue.config.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jurasinho/kamil-jurowicz-app.git"
+  },
+  "keywords": [
+    "Vue",
+    "JavaScript",
+    "App"
+  ],
+  "author": "Kamil Jurowicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jurasinho/kamil-jurowicz-app/issues"
+  },
+  "homepage": "https://github.com/Jurasinho/kamil-jurowicz-app#readme"
+}
