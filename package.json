@@ -20,6 +20,7 @@
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
+    "vue-splitpane": "^1.0.6",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
@@ -37,5 +38,5 @@
     "sass-loader": "^8.0.2",
     "style-dictionary": "^2.8.3",
     "vue-template-compiler": "^2.6.11"
-  },
+  }
 }

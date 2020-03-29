@@ -9,7 +9,8 @@ import UserProvider from '@/components/user/UserProvider';
 import store from './store';
 import router from './router';
 import App from './App.vue';
-import UserAvatar from './components/UserAvatar';
+import UserAvatar from './components/UserAvatar.vue';
+import splitPane from 'vue-splitpane'
 
 require('./registerServiceWorker');
 

@@ -1,14 +1,15 @@
 <template>
-  <div class="avatar-me" :class="computedClass">
-    <img :src="avatar" alt="" :width="width" :height="height">
+  <div class="avatar-image" :style="computedStyle" >
+    <img :src="src" class="pic" :style="computedStyle">
+
   </div>
 </template>
 
 <script>
-
 export default {
   props: {
-    user: {
+    src: {
+      type: String,
       required: true,
     },
     size: {
@@ -16,11 +17,11 @@ export default {
     },
   },
   computed: {
-    computedClass() {
-      return [''];
-    },
-    avatar() {
-      return this.user.avatar;
+    computedStyle() {
+      return {
+        width: this.sizeLength,
+        height: this.sizeLength,
+      };
     },
     sizeLength() {
       switch (this.size) {
@@ -34,12 +35,13 @@ export default {
           return '250px';
       }
     },
-    width() {
-      return this.sizeLength;
-    },
-    height() {
-      return this.sizeLength;
-    },
   },
 };
 </script>
+
+<style scoped>
+  img {
+    width: 100%;
+    height: auto;
+  }
+</style>

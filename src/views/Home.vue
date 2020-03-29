@@ -1,27 +1,23 @@
 <template>
   <div class="home">
     <app-sidebar class="sidebar">
-
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
+<!--      <router-link to="/">Home</router-link>-->
+<!--      <router-link to="/about">About</router-link>-->
     </app-sidebar>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          Test
-        </div>
-      </div>
-    </div>
+    <soon-section>
+
+    </soon-section>
   </div>
 </template>
 
 <script>
 
 import AppSidebar from '../components/sidebar/AppSidebar';
+import SoonSection from '../soon';
 
 export default {
   name: 'Home',
-  components: { AppSidebar },
+  components: { AppSidebar , SoonSection},
 };
 </script>
 
