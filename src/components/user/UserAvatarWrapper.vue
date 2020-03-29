@@ -13,7 +13,5 @@
 <style scoped>
   .user-avatar-wrapper {
     max-width: 100vw;
-    padding: 0;
-    margin: 0;
   }
 </style>

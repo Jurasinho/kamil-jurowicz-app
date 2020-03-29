@@ -9,3 +9,5 @@
     name: 'UserAvatars',
   };
 </script>
+
+<style lang="scss" src="./UserAvatars.scss"></style>

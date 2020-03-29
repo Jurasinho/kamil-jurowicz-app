@@ -6,6 +6,7 @@
   $color-background-dark-2: #2e2833;
   $color-background-private: $color-primary;
   $color-black: #000;
+  $color-pink-2: #9c3f66;
   $color-white: #fff;
 //// DURATION
 $duration-button: 130ms;
@@ -14,6 +15,7 @@ $border-radius-1: 25px;
 //// FONT
 $font-family-roboto: 'Roboto', sans-serif;
 $font-family-lato: 'Lato', sans-serif;
+$font-family-monospace: Consolas, monospace;
 
 /////////
 /////// CONFIGURATION
@@ -23,7 +25,7 @@ $font-family-lato: 'Lato', sans-serif;
 /// desc:   BASE to wszystko bezpośrednio po STAŁYCH - CONSTANTs -
 // attr:    FONT
 $font-size-base: 1rem !default; // Default
-$font-family-base: $font-family-roboto !default;
+$font-family-base: $font-family-monospace !default;
 $line-height-base: 100% !default;
 
 // ICONS
@@ -41,6 +43,7 @@ $background-color-body: $color-background-dark-1 !default;
 /////
 $user-avatar-under-color: $color-white;
 $color-twitter: #1DA1F2;
+$color-linkedin: #0e76a8;
 $color-github: ";";
 $color-github-fill: $color-black;
 $color-facebook: "";
