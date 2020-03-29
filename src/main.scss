@@ -1,15 +1,63 @@
-$color-primary: #9c3f5e;
-$color-background-dark-1: #18191d;
-$color-background-dark-2: #2e2833;
-$color-black: #000;
-$color-white: #fff;
+// VARIABLES
+
+//// COLOR
+  $color-primary: #e0245e;
+  $color-background-dark-1: #18191d;
+  $color-background-dark-2: #2e2833;
+  $color-background-private: $color-primary;
+  $color-black: #000;
+  $color-white: #fff;
+//// DURATION
 $duration-button: 130ms;
+//// BORDER
 $border-radius-1: 25px;
+//// FONT
 $font-family-roboto: 'Roboto', sans-serif;
 $font-family-lato: 'Lato', sans-serif;
-$border-radius-1: 25px;
 
+/////////
+/////// CONFIGURATION
+/////
 
+//// name:  BASE
+/// desc:   BASE to wszystko bezpośrednio po STAŁYCH - CONSTANTs -
+// attr:    FONT
+$font-size-base: 1rem !default; // Default
+$font-family-base: $font-family-roboto !default;
+$line-height-base: 100% !default;
+
+// ICONS
+$icon-fill-color-base: $color-white !default;
+$icon-stroke-color-base: $color-white !default;
+//// BODY zbyt ogólne rzeczy na COMPONTENTS, zbyt konkretne na BASE
+// FONT
+$font-size-body: $font-size-base !default;
+// LINE-HEIGHT
+$line-height-body: $line-height-base !default;
+//BACKGROUND
+$background-color-body: $color-background-dark-1 !default;
+
+//
+/////
+$color-username: $color-white;
+$color-twitter: #1DA1F2;
+$color-github: ";";
+$color-github-fill: $color-black;
+$color-facebook: "";
+$color-email: "";
+
+$user-avatar-badge-background: transparent !default;
+
+///
+/// FUNCTIONS
+///
+@function em($pixels, $context: $font-size-base) {
+  @return #{$pixels/$context}em;
+}
+
+///
+/// MIXINS
+///
 @mixin make-font-body() {
   font-family: $font-family-roboto;
   font-size: 1rem;
@@ -33,4 +81,29 @@ $border-radius-1: 25px;
     background-color: lighten($color-primary, 5%);
     transform: scale(1.05);
   }
+}
+
+//
+// FONT-LOADER
+//
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+
+html {
+  font-size: $font-size-base;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  font-family: $font-size-body;
+  background-size: cover;
+  background-position: center;
+  background-color: $background-color-body;
+}
+
+body {
+  background-image: linear-gradient(rgba(10, 10, 10, .6), rgba(0, 0, 0, .9)),
+  repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
+  url("/img/background.jpg");
 }

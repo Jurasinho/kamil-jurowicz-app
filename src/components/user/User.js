@@ -7,7 +7,7 @@ export class Company {
   }
 
   get avatarFileName() {
-    // return `../../../img/company.${this.name}.jpg`;
+    // return `../../../background/company.${this.name}.jpg`;
     return '';
   }
 }
@@ -80,7 +80,7 @@ const users = {
 };
 
 users.kamil.setAvatar('user.kamil.jpg');
-users.juras.setAvatar('user.juras.jpg');
+users.juras.setAvatar('user.juras.ricky.jpg');
 
 console.log(users);
 

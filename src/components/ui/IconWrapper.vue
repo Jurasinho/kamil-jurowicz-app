@@ -1,12 +1,11 @@
 <template>
-  <div :class="['rwl-form-wrapper']">
+  <div class="icon-wrapper">
     <slot></slot>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'FormWrapper',
-};
+  name: "IconWrapper",
+}
 </script>

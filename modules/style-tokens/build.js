@@ -1,13 +1,13 @@
 const StyleDictionary = require('style-dictionary')
   .extend({
-    source: ['src/style-tokens/**/*.json'],
+    source: ['./src/**/*.json'],
     platforms: {
       scss: {
         transformGroup: 'scss',
-        builtPath: 'dist/style-tokens/scss/',
+        builtPath: './dist/scss/',
         files: [
           {
-            destination: '_colors.scss',
+            destination: './dist/scss/_colors.scss',
             format: 'scss/variables',
             filter: {
               type: 'color',
