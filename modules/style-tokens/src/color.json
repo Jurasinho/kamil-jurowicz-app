@@ -1,0 +1,13 @@
+{
+	"color": {
+		"pink": {
+			"base": {
+				"value": "#9c3f5e",
+				"type": "color"
+			}
+		},
+		"primary": {
+			"value": "!{color.pink.base.value}"
+		}
+	}
+}

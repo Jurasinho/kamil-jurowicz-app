@@ -1,0 +1,93 @@
+// VARIABLES
+
+//// COLOR
+  $color-primary: #e0245e;
+  $color-background-dark-1: #18191d;
+  $color-background-dark-2: #2e2833;
+  $color-background-private: $color-primary;
+  $color-black: #000;
+  $color-white: #fff;
+//// DURATION
+$duration-button: 130ms;
+//// BORDER
+$border-radius-1: 25px;
+//// FONT
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-lato: 'Lato', sans-serif;
+
+/////////
+/////// CONFIGURATION
+/////
+
+//// name:  BASE
+/// desc:   BASE to wszystko bezpośrednio po STAŁYCH - CONSTANTs -
+// attr:    FONT
+$font-size-base: 1rem !default; // Default
+$font-family-base: $font-family-roboto !default;
+$line-height-base: 100% !default;
+
+// ICONS
+$icon-fill-color-base: $color-white !default;
+$icon-stroke-color-base: $color-white !default;
+//// BODY zbyt ogólne rzeczy na COMPONTENTS, zbyt konkretne na BASE
+// FONT
+$font-size-body: $font-size-base !default;
+// LINE-HEIGHT
+$line-height-body: $line-height-base !default;
+//BACKGROUND
+$background-color-body: $color-background-dark-1 !default;
+
+//
+/////
+$user-avatar-under-color: $color-white;
+$color-twitter: #1DA1F2;
+$color-github: ";";
+$color-github-fill: $color-black;
+$color-facebook: "";
+$color-email: "";
+
+$user-avatar-badge-background: transparent !default;
+
+///
+/// FUNCTIONS
+///
+@function em($pixels, $context: $font-size-base) {
+  @return #{$pixels/$context}em;
+}
+
+@function emem($pixels, $context: $font-size-base) {
+  @return #{$pixels/$context}em;
+}
+
+///
+/// MIXINS
+///
+@mixin make-font-body() {
+  font-family: $font-family-roboto;
+  font-size: 1rem;
+}
+
+@mixin make-primary-button($stack-space: 0.75em 0.5em, $inset-space: 0.25em 2em) {
+  text-underline: none;
+  font-weight: normal;
+  color: $color-white;
+  text-decoration: none;
+  display: inline-block;
+  margin: $stack-space;
+  background-color: $color-primary;
+  border-radius: $border-radius-1;
+  box-shadow: none;
+  font-size: 16px;
+  padding: $inset-space;
+  /*<!--transition: all linear $duration-button;-->*/
+
+  &:hover {
+    background-color: lighten($color-primary, 5%);
+    transform: scale(1.05);
+  }
+}
+
+#app {
+  min-width: 100vw;
+  min-height: 100vh;
+}
