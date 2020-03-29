@@ -7,23 +7,7 @@ $duration-button: 130ms;
 $border-radius-1: 25px;
 $font-family-roboto: 'Roboto', sans-serif;
 $font-family-lato: 'Lato', sans-serif;
-
-html {
-  font-size: 16px;
-}
-
-body {
-  background-color: $color-background-dark-1;
-  overflow: hidden;
-  height: 100vh;
-  font-family: $font-family-roboto;
-  background: linear-gradient(rgba(10,10,10,.6),rgba(0,0,0,.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
-  url("/img/background.jpg");
-
-  background-size: cover;
-  background-position:center;
-}
-
+$border-radius-1: 25px;
 
 
 @mixin make-font-body() {
@@ -48,24 +32,5 @@ body {
   &:hover {
     background-color: lighten($color-primary, 5%);
     transform: scale(1.05);
-  }
-}
-
-a {
-  text-underline: none;
-  font-weight: normal;
-  color: $color-primary;
-  text-decoration: none;
-  border-radius: $border-radius-1;
-  box-shadow: none;
-  font-size: 16px;
-  transition: all ease-in-out 50ms;
-
-  &:hover {
-    color: #9c3f66;
-  }
-
-  &:active {
-    color: #9c307a;
   }
 }

@@ -1,103 +1,54 @@
 <template>
   <div id="app">
-    <div class="left-side">
-
+    <div class="soon">
+      <a title="Go to Github" href="https://github.com/Jurasinho/kamil-jurowicz-app">
+        <div class="user-avatar-wrapper">
+        <user-avatar
+          src="https://avatars0.githubusercontent.com/u/22557945?s=460&u=a28d3b6b093ff46e5fb63c0bc4c5df7309e1f281&v=4"></user-avatar>
+          <img src="/img/GitHub-Mark-64px.png" class="github icon" alt="GitHub Mark">
+        </div>
+      </a>
+      <p>website in progress.</p>
+      <p>contact:</p>
+      <small><a class="link" href="mailto:me@kamil-jurowicz.com">me@kamil-jurowicz.com</a></small>
     </div>
-    <div class="right-side">
-
-    </div>
-<!--    <nav id="nav">>-->
-<!--      <router-link to="/">Home</router-link>-->
-<!--      <router-link to="/about">About</router-link>-->
-<!--    </nav>-->
-<!--      <router-view/>-->
-
-<!--     <div class="d-flex">-->
-<!--        <div class="kamil">-->
-<!--          <user-avatar src="img/assets/user.kamil.jpg"></user-avatar>-->
-<!--          <p>-->
-<!--            Kamil-->
-<!--          </p>-->
-
-<!--        </div>-->
-<!--      </div>-->
-
-<!--      <div class="juras">-->
-<!--        <div class="pic">-->
-<!--          <user-avatar src="img/user.juras.jpg">-->
-<!--          </user-avatar>-->
-<!--           </div>-->
-<!--        <p>-->
-<!--          juras-->
-<!--        </p>-->
-<!--      </div>-->
-      <div class="soon">
-
-        <p>soon.</p>
-        <small><a href="mailto:me@kamil-jurowicz.com">me@kamil-jurowicz.com</a></small>
-      </div>
   </div>
 </template>
 
+<style lang="scss">
+  @import "main";
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    font-family: $font-family-roboto;
+    background-size: cover;
+    background-position: center;
+    background-color: $color-background-dark-1;
+    background-image: linear-gradient(rgba(10, 10, 10, .6), rgba(0, 0, 0, .9)),
+    repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
+    url("/img/background.jpg");
+  }
+</style>
+
 <style lang="scss" scoped>
   @import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
- @import "./main.scss";
-
-
-  .soon {
-    width: 100%;
-    max-width: 400px;
-    .d-flex {
-      display: flex;
-      justify-content: space-around;
-    }
-    .row {
-      display: flex;
-      align-items: center;
-
-    }
-    .pic {
-      width: 150px;
-    }
-  }
-
-  .left-side {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 50%;
-    height: 100%;
-    background-color: #fff;
-    opacity: 0;
-    z-index: -1;
-    &:hover {
-
-    }
-  }
-  .right-side {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(0,0,0,0);
-    z-index: -1;
-    &:hover {
-      background-color: #fff;
-    }
-  }
+  @import "./main.scss";
 
   #app {
+    width: 100%;
+    height: 100%;
     position: relative;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    height: 100%;
     text-align: center;
     color: #fff;
-    max-width: 900px;
     margin: 0 auto;
     @include make-font-body();
     display: flex;
@@ -105,13 +56,45 @@
     align-items: center;
   }
 
-
-  $border-radius-1: 25px;
-
-  #nav {
-    padding: 30px;
-    a {
-      @include make-primary-button();
+  .icon {
+    &.github {
+      display: block;
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      bottom: 8px;
+      right: 8px;
     }
   }
+
+  .link {
+    text-underline: none;
+    font-weight: normal;
+    color: $color-primary;
+    text-decoration: none;
+    border-radius: $border-radius-1;
+    box-shadow: none;
+    font-size: 16px;
+    transition: all ease-in-out 50ms;
+
+    &:hover {
+      color: #9c3f66;
+    }
+
+    &:active {
+      color: #9c307a;
+    }
+  }
+
+  .user-avatar-wrapper {
+    position: relative;
+    transition: transform 200ms ease-in-out;
+    transform: scale(1);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+
 </style>
