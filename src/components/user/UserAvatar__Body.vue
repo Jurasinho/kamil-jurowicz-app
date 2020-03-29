@@ -1,21 +1,13 @@
 <template>
-  <div class="user-avatar__body">
+  <a class="user-avatar__body">
     <slot></slot>
-  </div>
+  </a>
 </template>
 
 <script>
 export default {
   name: 'UserAvatarBody',
   props: {},
-  data() {
-    return {};
-  },
+  inheritAttrs: true,
 };
 </script>
-
-<style lang="scss">
-  @import "@/main.scss";
-
-
-</style>

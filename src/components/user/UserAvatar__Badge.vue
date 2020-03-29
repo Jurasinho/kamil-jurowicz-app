@@ -11,11 +11,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import "../../main";
+  @import "../../base"; // will be variables todo
 
-  // LOCAL - can't be defaults
-  $background: $user-avatar-badge-background;
+  // initial
+  $padding: em(3px, 16px) 1em;
+  $border-radius: 5px;
+
   .user-avatar__badge {
-    background: $background;
+    padding: $padding;
+    border-radius: $border-radius;
   }
 </style>

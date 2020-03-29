@@ -7,6 +7,12 @@
 <script>
   export default {
     name: 'UserAvatarUnderText',
-
   };
 </script>
+
+<style scoped>
+  .user-avatar__under-text {
+    max-width: 100%;
+    text-overflow: fade;
+  }
+</style>

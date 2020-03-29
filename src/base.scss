@@ -39,7 +39,7 @@ $background-color-body: $color-background-dark-1 !default;
 
 //
 /////
-$color-username: $color-white;
+$user-avatar-under-color: $color-white;
 $color-twitter: #1DA1F2;
 $color-github: ";";
 $color-github-fill: $color-black;
@@ -52,6 +52,10 @@ $user-avatar-badge-background: transparent !default;
 /// FUNCTIONS
 ///
 @function em($pixels, $context: $font-size-base) {
+  @return #{$pixels/$context}em;
+}
+
+@function emem($pixels, $context: $font-size-base) {
   @return #{$pixels/$context}em;
 }
 
@@ -83,27 +87,7 @@ $user-avatar-badge-background: transparent !default;
   }
 }
 
-//
-// FONT-LOADER
-//
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
-
-html {
-  font-size: $font-size-base;
-}
-
-body {
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
-  font-family: $font-size-body;
-  background-size: cover;
-  background-position: center;
-  background-color: $background-color-body;
-}
-
-body {
-  background-image: linear-gradient(rgba(10, 10, 10, .6), rgba(0, 0, 0, .9)),
-  repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
-  url("/img/background.jpg");
+#app {
+  min-width: 100vw;
+  min-height: 100vh;
 }
