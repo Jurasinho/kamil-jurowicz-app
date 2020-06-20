@@ -21,12 +21,4 @@ module.exports = {
       }
     }
   },
-  pwa: {
-    "name": "kamil-jurowicz.com",
-    "short_name": "kamil-jurowicz",
-    "display": "standalone",
-    "background_color": "#000000",
-    "theme_color": "#791d3b",
-    assetsVersion: "1.0.1"
-  }
 };

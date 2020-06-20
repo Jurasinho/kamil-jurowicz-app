@@ -1,5 +1,11 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <website-preview website-code="WIDZIMISIE"></website-preview>
   </div>
 </template>
+<script>
+  import WebsitePreview from '../components/websites/WebsitePreview';
+  export default {
+    components: { WebsitePreview }
+  };
+</script>
