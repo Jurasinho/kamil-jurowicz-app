@@ -1,0 +1,63 @@
+//
+// FONT-LOADER
+//
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-base;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: $font-size-body;
+  background-size: cover;
+  background-position: center;
+  background-color: $background-color-body;
+  background-image: linear-gradient(rgba(10, 10, 10, .6), rgba(0, 0, 0, .9)),
+  repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
+  url("./../assets/background.jpg");
+}
+
+.home {
+  width: 100vw;
+  height: auto;
+
+  .link {
+    text-underline: none;
+    font-weight: normal;
+    color: $color-primary;
+    text-decoration: none;
+    border-radius: $border-radius-1;
+    box-shadow: none;
+    font-size: 16px;
+    transition: all ease-in-out 50ms;
+
+    &:hover {
+      color: #9c3f66;
+    }
+
+    &:active {
+      color: #9c307a;
+    }
+  }
+
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .soon {
+    color: white;
+    text-align: center;
+    padding: 30px;
+  }
+}
+
