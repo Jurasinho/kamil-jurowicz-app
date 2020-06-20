@@ -7,22 +7,25 @@
       <p>status: work in progress.</p>
     </div>
 
-<!--    <user-avatars>-->
-<!--      <user-avatar-wrapper class="user-avatar-wrapper">-->
-<!--        <user-avatar-->
-<!--          class="github user-avatar"-->
-<!--          size="small"-->
-<!--          :src="userKamil"-->
-<!--          href="https://github.com/Jurasinho/kamil-jurowicz-app"-->
-<!--          title="Go to Kamil Jurowicz's Github"-->
-<!--          :icon="GithubLogo"-->
-<!--        >-->
-<!--          <template #under-text>-->
-<!--            <span>@Jurasinho</span><br/>-->
-<!--            <span class="text-github">GitHub</span>-->
-<!--          </template>-->
-<!--        </user-avatar>-->
-<!--      </user-avatar-wrapper>-->
+    <user-avatars>
+      <user-avatar-wrapper class="user-avatar-wrapper">
+        <user-avatar
+          class="github user-avatar"
+          size="small"
+          :src="userKamil"
+          href="https://github.com/Jurasinho"
+          title="Go to Kamil Jurowicz's Github"
+          :icon="GithubLogo"
+        >
+          <template #under-text>
+            <span>@Jurasinho</span><br/>
+            <span class="text-github">GitHub</span>
+          </template>
+        </user-avatar>
+      </user-avatar-wrapper>
+    </user-avatars>
+  </div>
+</template>
 <!--      <user-avatar-wrapper class="user-avatar-wrapper">-->
 <!--        <user-avatar-->
 <!--          class="email user-avatar"-->
@@ -87,8 +90,8 @@
 <!--        </user-avatar>-->
 <!--      </user-avatar-wrapper>-->
 <!--    </user-avatars>-->
-  </div>
-</template>
+<!--  </div>-->
+<!--</template>-->
 
 <script>
   import GithubLogo from '../assets/company.github.svg';
