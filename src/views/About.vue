@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <website-preview website-code="WIDZIMISIE"></website-preview>
+<!--    <website-preview website-code="WIDZIMISIE"></website-preview>-->
   </div>
 </template>
 <script>

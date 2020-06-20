@@ -18,16 +18,16 @@
 </template>
 
 <script>
-  import Kamil from "../assets/user.kamil.jpg";
+  import Kamil from '../assets/user.kamil.jpg';
 
   export default {
-    name: "TheHeader",
+    name: 'TheHeader',
     data() {
       return {
         Kamil
-      }
+      };
     }
-  }
+  };
 </script>
 
 <style lang="scss">
@@ -52,10 +52,12 @@
       margin: 0;
       padding: 0;
     }
+
     &__title {
       font-family: $font-family-roboto;
       font-size: 1.3em;
     }
+
     &__subtitle {
       font-family: $font-family-monospace;
       font-size: 0.75em;
@@ -63,6 +65,7 @@
       color: #d04fff;
       text-transform: uppercase;
     }
+
     &__description {
       a {
         color: #d04fff;

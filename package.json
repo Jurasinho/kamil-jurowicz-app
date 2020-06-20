@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "98.css": "^0.1.16",
+    "@juras/styled-headlines": "^1.0.0",
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.4",
     "eslint-import-resolver-webpack": "^0.12.1",
